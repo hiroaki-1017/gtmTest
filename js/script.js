@@ -5,4 +5,5 @@ function buttonClick(){
          "page_url" : "https://hoge.com"
     });    
     console.log('test');
+    alert('カスタムイベントが送信されました')
 }
