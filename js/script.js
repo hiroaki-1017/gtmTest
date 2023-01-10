@@ -1,7 +1,6 @@
-function buttonClick(click_name, page_url){
+function buttonClick(page_url){
     dataLayer.push({
-         "event" : "testCustomEvent", // イベント名
-         "click_name" : click_name,
+         "event" : "stgCustomEvent", // イベント
          "page_url" : page_url
     });    
     console.log('test');
