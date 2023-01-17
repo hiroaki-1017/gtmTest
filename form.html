@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-contents">
+            <p>氏名(必須)</p>
+            <input type="text" placeholder="氏名" name="name" required />
+        </div>
+        <div class="form-contents">
+            <p>メールアドレス(必須)</p>
+            <input type="email" placeholder="example@mail.com" name="email" required />
+        </div>
+        <div class="form-contents">
+            <p>お問い合わせ内容(必須)</p>
+            <textarea placeholder="お問い合わせ内容" name="message" required></textarea>
+        </div>
+        <div v-show="false">
+            <label for="bot">スパムでない場合は空欄</label>
+            <input id="bot" type="text" name="bot-field" />
+        </div>
+        <input type="submit" class="form-button" value="送信する">
+</body>
+
+</html>
