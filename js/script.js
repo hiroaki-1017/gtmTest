@@ -1,6 +1,6 @@
 function buttonClick(page_url) {
   dataLayer.push({
-    event: "freetoCustomEvent", // 本番イベント
+    event: "stgCustomEvent", // 本番イベント
     click_name: page_url,
     event_category: page_url,
     elem_category: page_url,
