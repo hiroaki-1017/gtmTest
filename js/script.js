@@ -9,7 +9,7 @@ function buttonClick(page_url) {
     current_number: page_url,
     detail_number: page_url,
     detail_category: page_url,
-    page_title: page_url,
+    page_title: "aaaaaa",
   });
   console.log("test");
   alert("カスタムイベントが送信されました");
