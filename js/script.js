@@ -27,11 +27,11 @@ window.onload = function(){
 
   window.addEventListener("beforeunload", () => {
     console.log(stay_time);
-    stay_time = 0;
     dataLayer.push({
       event: "stayTime", // イベント名
       stay_time: stay_time,
       page_url: location.href
     });
+    stay_time = 0;
   });
 }
