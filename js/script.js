@@ -15,7 +15,7 @@ function buttonClick(page_url) {
   alert("カスタムイベントが送信されました");
 }
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   console.log("aaaaa");
   var stay_time = 0;
 
@@ -34,18 +34,18 @@ window.onload = function () {
     });
     stay_time = 0;
   });
-};
+});
 
 // window.onload = function () {
 //   console.log("aaaaa");
-//   let stay_time = 0;
+//   var stay_time = 0;
 //   function stayTime() {
 //     stay_time += 5;
 //     console.log(stay_time);
 //   }
 //   setInterval(stayTime, 5000);
 
-//   window.addEventListener("beforeunload", () => {
+//   window.addEventListener("beforeunload", function () {
 //     console.log(stay_time);
 //     dataLayer.push({
 //       event: "stayTime", // イベント名
